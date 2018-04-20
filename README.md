@@ -1,4 +1,4 @@
-#ttn-raspi-relay
+# ttn-raspi-relay
 
 Node.JS server to control a relay connected to raspi via TheThingsNetwork. 
 This is used to act as a "long range" garage door opener, but of course can be used for other purposes as well. 
