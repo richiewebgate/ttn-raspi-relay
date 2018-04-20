@@ -9,6 +9,8 @@ const relay = new Gpio(config.relay_gpio_pin, 'out');
 
 var LastTrigger = 0;
 
+log("Started");
+
 ttn.data(appID, accessKey).then(function (client) {
   client.on("uplink", function (devID, payload) {
 
@@ -59,10 +61,11 @@ function checkCoords( iLat, iLng ) {
 }
 
 function log(txt) {
-  console.log(new Date().toLocaleString(), "[TTN]", txt );
+  console.log(new Date().toLocaleString(), "[TTN-RASPI-RELAY]", txt );
 }
 
 process.on('SIGINT', function () {
   relay.unexport();
   console.log("Goodbye");
+  process.exit(1);
 });
