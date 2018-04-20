@@ -1,0 +1,17 @@
+// Sample config template for your personal config.js
+module.exports = {
+    "debug": false,
+    "triggerenabled": true,
+    "TTN_appID": "<your ttn app id here>",
+    "TTN_accessKey": "<your ttn access key here>",
+    "TTN_event": "garagedoor",
+    "relay_gpio_pin": 1,
+    "allowed_devices": ["car-01", "car-02"],
+    "geofence": {
+        "enabled": false,
+        "minLatitude": 47.36,
+        "maxLatitude": 47.41,
+        "minLongitude": 8.2,
+        "maxLongitude": 8.3
+    }
+}

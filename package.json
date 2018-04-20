@@ -1,0 +1,14 @@
+{
+  "name": "ttn-raspi-relay",
+  "version": "1.0.0",
+  "description": "Trigger a relay on Raspberry Pi via TheThingsNetwork",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RSC",
+  "license": "ISC",
+  "dependencies": {
+    "ttn": "^2.3.1"
+  }
+}
