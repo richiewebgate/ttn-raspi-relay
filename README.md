@@ -22,6 +22,7 @@ config.js is listed in .gitignore and will not be overwritten when you pull from
 Optional: You can use PM2 to run this script automatically on each reboot.
 
 $ sudo npm install pm2 -g
+
 $ pm2 startup
 
 [PM2] Init System found: systemd
@@ -30,5 +31,7 @@ $ pm2 startup
 sudo env PATH=$PATH:/bin /lib/node_modules/pm2/bin/pm2 startup systemd -u pi --hp /home/pi
 
 $ pm2 start pm2-process.json
+
 $ pm2 list 
+
 $ pm2 save
